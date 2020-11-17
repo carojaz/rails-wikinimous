@@ -1,3 +1,13 @@
 @import "bootstrap/scss/bootstrap";
 @import "rails_bootstrap_forms";
 @import "font-awesome";
+
+.fa, a {
+  font-size: 1.5em;
+  color: #1d3e53;
+  text-decoration: none;
+  &:hover {
+    color: #77abb7;
+    text-decoration: none;
+  }
+}

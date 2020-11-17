@@ -8,15 +8,8 @@
     <i class="fa fa-pencil"></i>
     <% end %>
     <%= link_to article_path(@article), method: :delete, data: { confirm: "Are you sure?" } do %>
-      <i class="fa fa-trash-alt"></i>
+      <i class="fa fa-trash-o"></i>
     <% end %>
-    <!-- link_to "Fed up delete it!", destroy_path renvoi sur un get -->
-    <%= link_to "Back to list", articles_path, class: "btn btn-info" %>
-
-    <%= link_to "Fed up with #{@article.title} delete it!",
-                article_path(@article), class: "btn btn-info",
-                method: :delete,
-                data: { confirm: "Are you sure?" } %>
   </section>
 
 </div>
