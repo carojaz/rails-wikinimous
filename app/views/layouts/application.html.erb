@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href=<%=articles_path%>>Wikiwow</a>
+      <a class="nav-link" href="<%=new_article_path%>">New Article <span class="sr-only">(current)</span></a>
+          </li>
+      </div>
+</nav>
     <%= yield %>
   </body>
 </html>

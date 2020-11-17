@@ -1,2 +1,22 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="container">
+    <h2><%=@article.title%></h2>
+  <section>
+    <p><%=@article.content%></p>
+  </section>
+  <section>
+    <%= link_to edit_article_path(@article) do %>
+    <i class="fa fa-pencil"></i>
+    <% end %>
+    <%= link_to article_path(@article), method: :delete, data: { confirm: "Are you sure?" } do %>
+      <i class="fa fa-trash-alt"></i>
+    <% end %>
+    <!-- link_to "Fed up delete it!", destroy_path renvoi sur un get -->
+    <%= link_to "Back to list", articles_path, class: "btn btn-info" %>
+
+    <%= link_to "Fed up with #{@article.title} delete it!",
+                article_path(@article), class: "btn btn-info",
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
+  </section>
+
+</div>
