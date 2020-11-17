@@ -1,7 +1,5 @@
 <div class="container">
-  <% if flash[:notice] %>
-    <div class="alert-success"><%= flash[:notice] %></div>
-  <% end %>
+
   <ul class="list-group">
       <% @articles.each do |article| %>
       <li class="list-group-item">
